@@ -1,62 +1,70 @@
-# 7-Project-Full-Scope
-Job Finder Web Application
-Project Overview
-The Job Finder web application was developed to solve a real-world problem — bridging the gap between job seekers and employers. Many people struggle to find suitable opportunities, while employers often have difficulty reaching the right candidates. This platform simplifies that process by providing an intuitive interface for both groups.
-Job seekers can create accounts, search for available positions by job title, location, or salary range, and apply directly. Employers can register, post new job listings, and manage their existing openings efficiently. The goal of the project is to make connecting job seekers and employers as seamless and effective as possible.
+# Getting Started with Create React App
 
-Setup Instructions
-1. Prerequisites
-Make sure the following are installed on your system:
-•	Node.js (https://nodejs.org/en/download)
-•	MongoDB (local installation or a cloud instance via MongoDB Atlas)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-2. Open the Project
-1.	Open the main project folder (for example, job-finder) in Visual Studio Code.
-2.	Ensure the project contains two folders:
-o	server — backend (API, database, authentication)
-o	client — frontend (user interface)
+## Available Scripts
 
-3. Run the Server
-1.	In the integrated terminal, navigate to the server folder:
-2.	cd server
-3.	Install backend dependencies:
-4.	npm install
-5.	Set up your environment variables:
-o	Create a .env file inside the server directory and add:
-o	MONGO_URI=your_mongodb_connection_string
-o	JWT_SECRET=your_secret_key
-o	PORT=5000
-6.	Start the server:
-7.	npm run dev
-The server should start on http://localhost:5000.
+In the project directory, you can run:
 
-4. Run the Client
-1.	Open a new terminal window and navigate to the client folder:
-2.	cd client
-3.	Install frontend dependencies:
-4.	npm install
-5.	Start the React client:
-6.	npm start
-The client will start on http://localhost:3000.
+### `npm start`
 
-5. Connecting Client and Server
-•	If you are using Create React App, add the following line to your client/package.json file:
-•	"proxy": "http://localhost:5000"
-This allows the frontend to communicate with the backend API without specifying full URLs.
-•	If you are using Vite, create a .env file in the client folder with:
-•	VITE_API_BASE=http://localhost:5000
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-6. Run the Full Application
-Once both servers are running:
-•	Open your browser and go to http://localhost:3000.
-•	Register as a job seeker or employer.
-•	Explore job listings, post new jobs, and test full CRUD operations.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-7. Key Technologies
-•	React (frontend)
-•	Node.js and Express (backend)
-•	MongoDB with Mongoose (database)
-•	JWT (authentication)
-•	Axios (API requests)
-•	Tailwind CSS or Bootstrap (styling)
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
